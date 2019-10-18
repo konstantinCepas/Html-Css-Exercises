@@ -1,0 +1,51 @@
+.body-wrap {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 1100px;
+    height: auto;
+    overflow: hidden;
+}
+
+.list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.list div {
+    display: flex;
+    width: calc(25% - 10px);
+    height: 100px;
+    max-height: 100px;
+    margin-bottom: 15px;
+    border: 1px dashed rgb(226, 226, 226);
+}
+/* .list div:nth-child(odd) {
+    background-color:royalblue;
+}
+.list div:nth-child(even) {
+    background-color:red;
+}
+.list div:last-child {
+    background-color:blueviolet;
+}
+.list div:nth-last-child(2) {
+    background-color:black;
+}
+
+/* .list div:nth-child(2n + 3) {
+    /* background-color:teal; */
+
+/* .list div:nth-child(-n + 6) {
+    background-color:teal;
+} */
+/* .list div:nth-child(2n + 3):nth-child(odd) {
+    background-color:teal;
+}  */ 
+.list div:nth-child(3n + 4):nth-child(-n + 14){
+    background-color:blueviolet;
+}

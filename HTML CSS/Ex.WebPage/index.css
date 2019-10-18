@@ -1,0 +1,37 @@
+.grid{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(3, 100px);
+    grid-gap: 20px;
+    width: 60%;
+    grid-template-areas: 
+    "main main hd hd hd hd"
+    "main main aside aside aside aside"
+    "fr fr fr fr p p";
+    margin: 0 auto;
+}
+.grid-part{
+    background-color: #808888;
+   border-radius: 5px;
+   color: #fff;
+   font-size: 12px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin: 0;
+}   
+header {
+    grid-area: hd;
+}
+article {
+    grid-area: main;
+}
+p {
+    grid-area: p;
+}
+footer {
+    grid-area: fr;
+}
+aside {
+    grid-area: aside;
+}

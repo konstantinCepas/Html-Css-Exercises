@@ -1,0 +1,66 @@
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: repeat(10 , 100px);
+    grid-gap: 15px;
+    width: 70%;
+    margin: 0 auto;
+    grid-template-areas: 
+    "on tw th fo"
+    "on tw th fo"
+    "fi tw th fo"
+    "fi tw si fo"
+    "fi se si fo"
+    "fi se si fo"
+    "ei se si fo"
+    "ei ni si te"
+    "ei ni si te";
+}
+.one{
+    background-color: blueviolet;
+    grid-area: on;
+}
+.two{
+    background-color: rgb(28, 199, 51);
+    grid-area: tw;
+}
+.three{
+    background-color: rgb(220, 255, 125);
+    grid-area: th;
+}
+.four{
+    background-color: rgb(15, 255, 223);
+    grid-area: fo;
+}
+.five{
+    background-color: rgb(255, 217, 0);
+    grid-area: fi;
+}
+.six{
+    background-color: rgb(226, 43, 43);
+    grid-area: si;
+}
+.seven{
+    background-color: rgb(1, 26, 250);
+    grid-area: se;
+}
+.eight{
+    background-color: rgb(73, 177, 247);
+    grid-area: ei;
+}
+.nine{
+    background-color: rgb(87, 143, 50);
+    grid-area: ni;
+}
+.ten{
+    background-color: rgb(92, 0, 0);
+    grid-area: te;
+}
+.grid div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border-radius: 15px;
+    font-size: 25px;
+}

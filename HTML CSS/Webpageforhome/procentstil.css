@@ -1,0 +1,157 @@
+.body-wrap {
+    margin: 0 auto;
+    width: 1300px;
+    height: auto;
+   
+}
+header{
+    background-color: rgb(212, 0, 0);
+    width: 1300px;
+    position: fixed;
+    height: 60px;
+    z-index: 99;
+}
+.meni{
+    position: relative;
+}
+li{
+    display: inline;
+    margin: 16px;
+}
+li.meni:hover .menieden {
+    display:block; 
+}
+.menieden li{
+    display: block;
+}
+.menieden {
+    display: none;
+    position:absolute;
+    right: 8px;   
+    
+}
+.tabelaeden li a {
+    text-decoration: none;
+    color: black;
+    font-family: serif;
+
+    
+}
+.table{
+    font-size: 19px;
+    position: relative;
+    float: left;
+}
+.right{
+    float: right;
+    position: relative;
+    top: 10px;
+    right: 27px;
+}
+input{
+    background: url("https://66.media.tumblr.com/8dcf8ce8f27e3bc33f03572241325f4d/tumblr_phc1475P3c1ri55bfo1_75sq.png") top left  no-repeat;
+    height:30px;
+    padding-left: 34px; 
+    background-color:white;
+    padding-right: 62px;
+    border-radius: 25px;
+    
+}
+.pictureone{
+    padding-top: 70px;
+    text-align: center;
+    position: relative;
+   
+}
+.prvaslika{
+    width: 100%;
+}
+.img-text {
+    position: absolute;
+    color:rgb(145, 3, 3);
+    font-size: 50px;
+    top: 36%;
+    font-family: 'Oswald' , sans-serif;
+    right: 30%;
+    
+}
+.arrows {
+    width: 48px;
+    height: 48px;
+    border-color: white;
+    position: absolute;
+    top: 52%;
+    margin-top: -31px;
+    border-radius: 5px;    
+
+}
+.prev{
+    border-bottom: 6px solid white;
+    border-left: 6px solid white;
+    transform: rotate(45deg);
+    left: 40px;
+    top: 50%;
+}
+.next{
+        border-bottom: 6px solid white;
+        border-left: 6px solid white;
+        transform: rotate(-135deg);
+        right: 40px;
+        top: 50%;
+}
+.flex-widget{
+    display: flex;
+    border: 1px solid silver;
+    border-top: white;
+}
+.felx-part img{
+    width: 100%;
+}
+.text-text{
+    display: flex;
+   
+    justify-content: center;
+    
+}
+h1 {
+    font-size: 30px;
+}
+p{
+    font-size: 21px;
+}
+.text-text-text{
+    display: flex;
+    justify-content: center;
+}
+.flex-flex-pic{
+   
+    width: calc(100%/3);
+ 
+   
+}
+.flex-pic{
+    display: flex;
+    flex-wrap: wrap;
+
+}
+ img.pic{
+   float: left;
+   max-width: 100%;
+   height: 240px;
+}
+img.pic-logo{   
+  width: 30%;
+}
+span {
+    width:100%;
+    display: block;
+    font-weight: bold;
+    font-size: 19px;
+}
+.up{
+    margin: 10px;
+}
+a{
+    color: black;
+    text-decoration: none;
+}

@@ -1,0 +1,423 @@
+.body-wrap {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 1100px;
+    height: auto;
+    overflow: hidden;
+}
+
+
+header .menu ul li {
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+    height: 100%;
+    font-family: 'Oswald', sans-serif;
+    color: #2d2d2d;
+}
+
+header .menu ul li a {
+    text-decoration: none;
+    color: #2d2d2d;
+    transition: color 0.5s ease-in-out;
+    transform: skewX(10deg);
+}
+
+header .menu ul li a:hover {
+    color: #1097cc;
+    transform: skewX(-10deg);
+}
+
+header .menu ul .dropdown {
+    visibility: hidden;
+    opacity: 0;
+    display: flex;
+    position: absolute;
+    top: 40px;
+    flex-direction: column;
+    width: 120px;
+    height: auto;
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #fff;
+    box-shadow: 0 1px 1px 0 rgba(0,0,0,.15);
+    border-radius: 1px;
+    border: 1px solid #eaeef1;
+    transition: all 0.6s ease-in-out, visibility 0s linear 0.3s;
+}
+
+header .menu ul .dropdown li {
+    width: 100%;
+    padding: 0;
+}
+
+header .menu ul .dropdown li:first-of-type {
+    padding: 0;
+}
+
+header .menu ul .dropdown li:last-of-type {
+    padding: 0;
+}
+
+header .menu .has-dropdown:hover .dropdown {
+    visibility: visible;
+    opacity: 1;
+    transition-delay: 0s, 0.2s;
+}
+
+header .menu ul li:first-of-type {
+    padding: 0 10px 0 0;
+}
+
+header .menu ul li:last-of-type {
+    padding: 0 0 0 10px;
+}
+
+header .menu ul li.active a {
+    color: #1097cc;
+}
+
+.menu-img {
+    max-height: 25px;
+    margin-left: 10px;
+    transform: rotateY(-180deg);
+}
+
+.search-hover:hover .search-wrap {
+    display: block;
+}
+
+.slider {
+    margin: 50px 0 20px;
+}
+
+.slider a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.slider img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    object-position: bottom;
+    transform: rotateY(-180deg) scale(2);
+}
+
+.slider-text {
+    position: absolute;
+    display: flex;
+    align-self: center;
+    justify-self: center;
+    text-align: center;
+    float: left;
+    font-size: 26px;
+    color: #fff;
+    font-weight: 600;
+    font-family: 'Oswald', sans-serif;
+}
+
+.slider-text:hover span {
+    text-transform: lowercase;
+}
+
+.widget {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.widget .part {
+    width: calc(100%/2 - 10px);
+    overflow: hidden;
+    position: relative;
+}
+
+.part img.w-img-2 {
+    transform: rotateX(180deg) rotateY(180deg);
+}
+
+.widget .part a {
+    text-decoration: none;
+}
+
+.part img {
+    height: 240px;
+}
+
+.part img.w-img-1 {
+    transform: rotateY(180deg);
+}
+
+.content-wrap {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 60px;
+    padding: 0 20px 0 140px;
+}   
+
+.logo-wrap {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: 1px;
+    left: 20px;
+    width: 100px;
+    height: 100px;
+    background-color: #fff;
+    box-shadow: 0 1px 1px 0 rgba(0,0,0,.15);
+    border-radius: 1px;
+    border: 1px solid #eaeef1;
+}
+
+.logo-wrap img {
+    width: 90%;
+    height: auto;
+}
+
+.text {
+    width: calc(100% - 170px);
+    font-family: 'Oswald', sans-serif;
+    font-size: 17px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-decoration: none;
+    white-space: nowrap;
+    color: #2d2d2d;
+}
+
+.widget-text {
+    padding: 20px;
+    color: #2d2d2d;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 15px;
+    line-height: 17px;
+    box-shadow: 0 1px 1px 0 rgba(0,0,0,.15);
+    border-radius: 1px;
+    border: 1px solid #eaeef1;
+}
+
+.widget-text h1 {
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+    font-size: 26px;
+    line-height: 26px;
+}
+
+.widget-text ul { 
+    margin-bottom: 0;
+}
+
+.widget-logos {
+    margin-top: 30px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+ul.list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+ul.list li {
+    display: flex;
+    width: calc(25% - 10px);
+    min-height: 82px;
+    max-height: 82px;
+    margin-bottom: 10px;
+    border: 1px solid #e8e9e9;
+    border-radius: 2px;
+}
+
+ul.list li a {
+    display: flex;
+    align-items: center;
+    background-color: #f6f6f6;
+    border-radius: 3px;
+    text-decoration: none;
+    color: #4b4b4b;
+    cursor: pointer;
+}
+
+ul.list li a .list-item-logo {
+    min-width: 100px;
+    width: 100px;
+    border-right: 1px solid #e8e9e9;
+}
+
+ul.list li a img {
+    width: 100%;
+    height: 50px;
+    object-fit: contain;
+}
+
+ul.list li a .list-item-content {
+    padding: 0 10px;
+}
+
+ul.list li a .list-item-name {
+    color: #1097cc;
+    font-weight: bold;
+}
+
+.menu-wrap {
+    display: flex;
+    align-items: center;
+    transition: all 2s ease-in-out;
+}
+
+.search-wrap {
+    display: none;
+    position: absolute;
+    top: 20px;
+    right: 30px;
+}
+
+.search {
+    width: 200px;
+}
+
+input {
+    width: 200px;
+    transition: width 1s ease-in;
+}
+
+input:focus {
+    width: 300px;
+}
+
+.menu-mobile {
+    display: none;
+}
+
+/* .widget-text {
+     animation-duration: 3s;
+    animation-name: slidein;
+    animation-timing-function: ease-out; 
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-fill-mode: none;
+    animation-play-state: running; 
+    animation: slidein 3s infinite alternate; 
+}  */
+
+.box{
+    width: 100%;
+    height: 100px;
+    margin-bottom: 30px;
+    /* background-color: #4d0080; */
+    /* animation: box-color 5s infinite 1s; */
+    /* background-image: linear-gradient(#4f0080, #b570df); */
+    /* background-image: linear-gradient(to right, #ff0000, #9d00ff); */
+    background-image: linear-gradient(to bottom right, #00ffc8, #9d00ff);
+    /* background-image: linear-gradient( -90deg , #00ffc8, #9d00ff); */
+}
+
+/* @keyframes box-color {
+    0% {
+        background-color: aquamarine;
+    }
+    50% {
+        background-color: #4d0080;
+        padding: 10px;
+    }
+    100% {
+        background-color: #1097cc;
+    }
+    
+} */
+img.heart{
+    height: 150px;
+    width: 150px;
+    margin:0 auto;
+    animation: srce 5s infinite;
+    z-index: 2;
+}
+@keyframes srce {
+  
+    20% {
+        transform: scale(2);
+    }
+    40% {
+        transform: scale(1);
+    }
+    60% {
+        transform: scale(2);
+    }
+}
+/* .widget-text{
+    animation: slidein 3s infinite 1s;
+} */
+@keyframes slidein{
+    from {
+        margin-top: 100%;
+        opacity: 0;
+
+    }
+    20% {
+        margin-top: 25%;
+        width: 10%;
+        background-color: rgb(0, 204, 255);
+        border:5px dashed black;
+        border-radius: 15px;
+
+    }
+    to {
+        margin-top: 0%;
+        width: 95%;
+        background-color: rgb(251, 255, 43);
+        border:5px double black;
+        border-radius: 15px;
+        font-weight: bold;
+        font-size: 60%;
+        font-family: 'Times New Roman', Times, serif;
+    }
+
+}
+
+@font-face {
+    font-family: icons;
+    src:url("wl-theme-b.eot");
+     src:url("wl-theme-b.eot?#iefix") format("embedded-opentype"),
+     url("wl-theme-b.woff") format("woff"),
+     url("wl-theme-b.ttf") format("truetype"),
+     url("wl-theme-b.svg#wl-theme-b") format("svg");
+     font-weight: normal;
+     font-style: normal;
+}
+    
+.icon-search:before {
+    content: "a";
+}
+    
+.icon-angle-left:before, .icon-prev:before {
+    content: "b";
+}
+    
+[class^="icon-"]::before, [class*="icon-"]::before {
+    font-family: "icons" !important;
+    font-style: normal !important;
+    font-weight: normal !important;
+    font-variant: normal !important;
+    text-transform: none !important;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+h1::before{
+    content: "d";
+    font-family: "icons";
+}
+h1::after{
+    content: "d";
+    font-family: "icons";
+}

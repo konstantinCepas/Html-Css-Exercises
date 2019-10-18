@@ -1,0 +1,32 @@
+body {
+    font-family: 'Dancing Script', cursive;
+    max-width: 80%;
+    margin: 0 auto;
+ }
+ 
+ span {
+    font-family: 'Oswald', sans-serif;
+ }
+ 
+ .widget {
+    display: flex;
+    width:100%;
+    height: 550px;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin: 50px 0 0;
+    justify-content: space-between;
+}
+ 
+ .widget-part {
+    width: 50%;
+    min-height: 100px;
+    background-color: blanchedalmond;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.widget-part:nth-child(n + 6){
+   margin-left: 10px;
+}

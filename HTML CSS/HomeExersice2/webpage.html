@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" type="text/css" href="styles.css">
+<head>
+
+<title>Code Academy</title>
+</head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  
+  
+  
+  <script>
+  // A $( document ).ready() block.
+jQuery( document ).ready(function() {
+    
+jQuery( "#login" ).click(function() {
+//   alert( jQuery( "#username" ).val() );
+jQuery( "#enter").text(jQuery( "#username" ).val());
+});
+
+});
+  
+  </script>
+
+<body>
+    <h1 id="enter">Enter the system</h1>
+    <p>It is nesessary to login in your account in order to sing in for a course.</p>
+<section class="container">
+        <form action="/action_page.php">
+<div class="one">
+        <h2>ARE YOU NEW?<a href="https://www.w3schools.com">REGISTER</a></h2>
+        <input  type="text" name="fname" id="username" placeholder="Username">
+        <input  type="text" name="lname" placeholder="Email">
+        <input type="password" name="fname" placeholder="Password">
+        <input type="password" name="lname" placeholder="Confirm Password">
+        <button type="submit" class="registerbtn">Register</button>
+                </div>
+</form>
+        <form action="/action_page.php"></form>
+<div class="two">
+            <h2>ALREADY A STUDENT?LOGIN</h2>
+            <input type="text" name="fname" placeholder="Username">
+            <input type="password" name="fname" placeholder="Password">
+            <input type="checkbox" class="checkbox" id="toggle-1"><label for="toggle-1">Remember Me?</label>
+            <button type="submit" id="login" class="registerbtn">Login</button>
+            <h3><a href="#">Forgot password</a></h3>
+                </div>
+
+</section>
+</body>
+</html>

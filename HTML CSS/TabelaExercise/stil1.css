@@ -1,0 +1,62 @@
+
+table{
+    font-family: arial, sans-serif;
+    width: 40%;
+    border-collapse: collapse;
+}
+td {
+    width: 5%;
+    text-align: center;
+    padding: 1rem;
+    border-bottom: 1px solid #333;
+}
+img{
+    height: 50px;
+}
+input{
+    border-radius: 8px;
+    height: 50%;
+}
+#texts{
+    width: 40%;
+    font-size: 150%;
+}
+#xxx{
+    height: 78%;
+    font-size: 120%;
+}
+button{
+    width: 90%;
+    font-size:15px;
+    font-weight: bold;
+    padding: 2%;
+    cursor: pointer;
+}
+button:hover{
+    opacity:1;
+    background-color: lightblue;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+th{
+    -webkit-text-fill-color: gray;
+}
+.one{
+    float: left;
+    block-size: 50px;
+    width: 12%;
+    padding: 2%;
+    text-align: center;
+}
+input[type="checkbox"]{
+    width: 50%;
+}
+label{
+  margin-left: 5em;
+  margin-top: -1.4em;  
+  line-height: 1.4em; 
+  font-size: 135%;
+  float: left;
+}

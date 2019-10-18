@@ -1,0 +1,64 @@
+.body-wrap {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 1100px;
+    height: auto;
+    overflow: hidden;
+}
+
+.list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    flex-direction: column;
+    height: 570px;
+}
+
+.list div {
+    display: flex;
+    width: calc(100%/3 - 10px);
+    height: 100px;
+    max-height: 100px;
+    margin-bottom: 10px;
+    border: 1px dashed rgb(226, 226, 226);
+}
+
+.list div:nth-child(odd) {
+    background-color: rgb(182, 115, 165);
+}
+
+.list div:nth-child(even) {
+    background-color: rgb(139, 50, 117);
+}
+
+.list div:nth-child(n+6) {
+    background-color: rgb(85, 5, 65);
+}
+
+.list div:nth-child(-n+5) {
+    background-color: rgb(226, 150, 207);
+}
+
+.list div:nth-child(3n+4) {
+    background-color: rgb(216, 61, 177);
+}
+
+.list div:first-child {
+    background-color: rgb(174, 174, 174);
+}
+
+.list div:last-child {
+    background-color: rgb(43, 5, 33);
+}
+
+.list div:last-child(2) {
+    background-color: rgb(19, 5, 15);
+}
+
+.list div:nth-child(n+4):nth-child(-n+10) {
+    background-color: rgb(4, 4, 4);
+}
